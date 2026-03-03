@@ -1,0 +1,117 @@
+{
+  "projectType": "saas",
+  "projectName": "CodexBar",
+  "projectDescription": "macOS menu bar app that tracks AI coding assistant usage limits across multiple providers",
+  "theme": "aspen",
+  "primaryColor": "#3B82F6",
+  "lightColor": "#60A5FA",
+  "darkColor": "#1E40AF",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/menu-bar-icons",
+              "features/usage-tracking",
+              "features/cost-analysis",
+              "features/merge-icons-mode",
+              "features/widgets"
+            ]
+          },
+          {
+            "group": "Providers",
+            "pages": [
+              "providers/overview",
+              "providers/codex",
+              "providers/claude",
+              "providers/cursor",
+              "providers/gemini",
+              "providers/copilot",
+              "providers/other-providers"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/settings",
+              "configuration/permissions",
+              "configuration/config-file",
+              "configuration/refresh-cadence"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI Reference",
+        "groups": [
+          {
+            "group": "Command Line",
+            "pages": [
+              "cli/overview",
+              "cli/installation",
+              "cli/usage-command",
+              "cli/cost-command",
+              "cli/configuration"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Developer Guide",
+        "groups": [
+          {
+            "group": "Development",
+            "pages": [
+              "development/architecture",
+              "development/building",
+              "development/testing",
+              "development/provider-authoring"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/refresh-loop",
+              "advanced/status-polling",
+              "advanced/ui-system",
+              "advanced/sparkle-updates"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-provider usage tracking in menu bar",
+    "Session and weekly limit monitoring with reset countdowns",
+    "Local cost usage analysis for last 30 days",
+    "Merge Icons mode with provider switcher",
+    "Bundled CLI for scripts and CI",
+    "WidgetKit integration",
+    "Privacy-first on-device parsing",
+    "Support for 15+ AI coding providers"
+  ],
+  "publicApiSurface": [
+    "codexbar usage - Fetch current usage statistics",
+    "codexbar cost - Analyze local token cost usage",
+    "codexbar config validate - Validate configuration file",
+    "codexbar config dump - Display normalized config",
+    "UsageFetcher - Core usage fetching interface",
+    "ProviderProtocol - Provider implementation protocol",
+    "UsageStore - Central usage state management",
+    "StatusItemController - Menu bar status item management",
+    "IconRenderer - Dynamic menu bar icon generation",
+    "CostUsageFetcher - Local cost analysis scanner"
+  ]
+}
